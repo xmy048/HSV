@@ -1,0 +1,11 @@
+<launch>
+  <arg name="image_topic" default="/camera/image_raw"/>
+  <arg name="detections_topic" default="/bucket_hsv/detections"/>
+  <arg name="config" default="$(find bucket_hsv)/config/default.yaml"/>
+
+  <node pkg="bucket_hsv" type="bucket_detector_node.py" name="bucket_detector" output="screen">
+    <param name="image_topic" value="$(arg image_topic)"/>
+    <param name="detections_topic" value="$(arg detections_topic)"/>
+    <param name="config" value="$(arg config)"/>
+  </node>
+</launch>

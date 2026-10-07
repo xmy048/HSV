@@ -190,11 +190,55 @@ PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 .venv/bin/python tests/test_synthetic.py
 
 9 张照片原尺寸处理，已人工查看九宫格：调参后每张有一个对应颜色的候选，轮廓落在桶的可见颜色区域。没有人工逐像素真值或独立测试集，因此不宣称准确率或跨场景可靠性。
 
-## 8. 当前阶段：只测试核心算法
+## 8. ROS1 Noetic 接入
 
-ROS 节点、消息、launch 和 catkin 配置已按当前需求移除。`setup.py` 仅用于独立 Python 包安装。核心、图片/视频入口和调参工具直接运行。
+`bucket_detector_node.py` 订阅 640×480、`rgb8` 的 `sensor_msgs/Image`，通过
+`cv_bridge` 转成 BGR 后调用同一个 `detect_buckets()` 核心。每个有效输入帧发布一条
+`bucket_hsv/DetectionArray`；其中 `header` 沿用相机图像的时间戳和 `frame_id`，
+`detections` 包含该帧所有候选，无候选时为空数组。每个候选含 `color`（red/yellow/blue）、
+`center_x` 和 `center_y`（原图浮点像素质心）。格式、尺寸错误的帧会记录日志并跳过。
 
-直接检测现有照片：
+### 提供给其他使用者
+
+只需要提供 `HSV` 源码目录。不要提供本机的绝对路径符号链接，也不需要提供
+`catkin_ws/build`、`catkin_ws/devel` 或 `catkin_ws/log` 等编译产物。使用者需要先安装
+ROS1 Noetic、`cv_bridge` 和 OpenCV，然后将源码复制或链接到自己的 catkin 工作空间：
+
+```bash
+mkdir -p ~/catkin_ws/src
+cp -r HSV ~/catkin_ws/src/bucket_hsv
+# 或者使用链接，便于继续修改源码：
+# ln -s /实际路径/HSV ~/catkin_ws/src/bucket_hsv
+
+cd ~/catkin_ws
+source /opt/ros/noetic/setup.bash
+catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
+source devel/setup.bash
+```
+
+如果使用者已经有 catkin 工作空间，只需把 `HSV` 放入该工作空间的 `src/` 目录，不需要
+另外创建 `catkin_ws`。每台机器只需编译一次；新开终端运行节点前需要重新执行
+`source /opt/ros/noetic/setup.bash` 和 `source ~/catkin_ws/devel/setup.bash`。
+
+把本项目放入 catkin 工作空间的 `src/` 后，在该工作空间中执行：
+
+```bash
+source /opt/ros/noetic/setup.bash
+catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
+source devel/setup.bash
+roslaunch bucket_hsv bucket_detector.launch image_topic:=/camera/image_raw \
+  detections_topic:=/bucket_hsv/detections \
+  config:=$(rospack find bucket_hsv)/config/default.yaml
+```
+
+另开终端并 `source` 相同的 ROS 及工作空间环境后，可运行
+`rostopic echo /bucket_hsv/detections` 查看输出。launch 的三个参数分别控制输入话题、
+输出话题和 YAML 路径。若已有自己的 catkin 工作空间，将此包放入其 `src/` 即可。
+节点和相机必须连接同一 ROS master。节点使用大小为 1 的订阅及发布队列，处理赶不上
+相机时优先保留新帧，不能据此保证每个相机帧都会得到输出。现场相机的光照、目标大小
+与既有照片可能不同，需通过 YAML 调整 HSV 和筛选阈值。
+
+核心算法也可以继续直接运行。检测现有照片：
 
 ```bash
 .venv/bin/python scripts/detect_image.py data \
@@ -203,7 +247,7 @@ ROS 节点、消息、launch 和 catkin 配置已按当前需求移除。`setup.
 
 查看输出目录中每张图片的 `annotated.jpg`，再对照 `detections.json` 和六张掩膜。每个十字表示颜色区域质心。原图和参数保持不变时，结果坐标应与前一次照片调试一致。
 
-后续需要新环境接入时，再独立增加适配层。
+ROS 节点不修改核心检测逻辑，也不输出标注图；图片和视频工具仍可独立使用。
 
 ## 9. 当前局限与待现场验证
 
