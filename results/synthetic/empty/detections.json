@@ -1,9 +1,0 @@
-{
-  "center_definition": "去噪后颜色区域质心，不自动等于桶口中心",
-  "image_size": {
-    "width": 640,
-    "height": 480
-  },
-  "elapsed_ms": 2.8412200008460786,
-  "detections": []
-}
