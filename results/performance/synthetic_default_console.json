@@ -1,0 +1,107 @@
+{
+  "frames": 600,
+  "elapsed_seconds": 1.993499616999543,
+  "mean_ms": 2.681844098321259,
+  "max_ms": 6.754571000783471,
+  "p95_ms": 2.949380749669217,
+  "processing_fps": 300.97823690735004,
+  "timed_frames": 570,
+  "steady_state": {
+    "frames": 570,
+    "elapsed_seconds": 1.8857613000000129,
+    "mean_ms": 2.6708647631510343,
+    "max_ms": 3.5915940006816527,
+    "p95_ms": 2.9457005502990796,
+    "processing_fps": 302.26519125193425
+  },
+  "warmup_frames_requested": 30,
+  "input_fps_reported": 30.0,
+  "image_sizes": [
+    [
+      640,
+      480
+    ]
+  ],
+  "source": "results/performance/synthetic_30hz.avi",
+  "no_display": true,
+  "save_debug_every": 0,
+  "opencv_version": "4.6.0",
+  "opencv_threads": 32,
+  "python_version": "3.12.3",
+  "machine": "x86_64",
+  "config": {
+    "colors": {
+      "red": {
+        "h_ranges": [
+          [
+            0,
+            10
+          ],
+          [
+            170,
+            179
+          ]
+        ],
+        "s_range": [
+          80,
+          255
+        ],
+        "v_range": [
+          45,
+          255
+        ]
+      },
+      "yellow": {
+        "h_ranges": [
+          [
+            20,
+            35
+          ]
+        ],
+        "s_range": [
+          80,
+          255
+        ],
+        "v_range": [
+          45,
+          255
+        ]
+      },
+      "blue": {
+        "h_ranges": [
+          [
+            95,
+            130
+          ]
+        ],
+        "s_range": [
+          80,
+          255
+        ],
+        "v_range": [
+          45,
+          255
+        ]
+      }
+    },
+    "morphology": {
+      "kernel_shape": "ellipse",
+      "kernel_size": 3,
+      "open_iterations": 1,
+      "close_iterations": 1,
+      "connectivity": 8
+    },
+    "filters": {
+      "min_area_fraction": 0.0005,
+      "max_area_fraction": 0.8,
+      "min_aspect_ratio": 0.15,
+      "max_aspect_ratio": 6.0,
+      "min_circularity": 0.0,
+      "min_solidity": 0.0,
+      "exclude_truncated": false
+    }
+  },
+  "end_reason": "eof",
+  "success": true,
+  "fps_definition": "成功处理帧数 / 包含读取和输出的墙钟时间；视频文件不按输入 FPS 限速"
+}

@@ -1,0 +1,550 @@
+{
+  "center_definition": "去噪后颜色区域质心，不自动等于桶口中心",
+  "image_size": {
+    "width": 4000,
+    "height": 3000
+  },
+  "elapsed_ms": 146.634503000314,
+  "detections": [
+    {
+      "color": "yellow",
+      "center_x": 706.417227743935,
+      "center_y": 808.1657582558512,
+      "area_px": 9357,
+      "bbox": [
+        577,
+        768,
+        277,
+        87
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.03729096489503407,
+      "solidity": 0.5231319710396108
+    },
+    {
+      "color": "yellow",
+      "center_x": 3260.080430172675,
+      "center_y": 830.4881853983642,
+      "area_px": 6602,
+      "bbox": [
+        3145,
+        790,
+        250,
+        89
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.022616679164097736,
+      "solidity": 0.46269755054841083
+    },
+    {
+      "color": "yellow",
+      "center_x": 481.3945718858362,
+      "center_y": 911.1063616964524,
+      "area_px": 14996,
+      "bbox": [
+        304,
+        837,
+        359,
+        133
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.01588438027959309,
+      "solidity": 0.437935314302402
+    },
+    {
+      "color": "yellow",
+      "center_x": 2281.1859503967858,
+      "center_y": 1468.3312730961236,
+      "area_px": 1256975,
+      "bbox": [
+        0,
+        886,
+        4000,
+        1338
+      ],
+      "possibly_truncated": true,
+      "circularity": 0.0018882772939830881,
+      "solidity": 0.36134367902614073
+    },
+    {
+      "color": "yellow",
+      "center_x": 1467.1726517391917,
+      "center_y": 1020.7163779749332,
+      "area_px": 7101,
+      "bbox": [
+        1356,
+        964,
+        225,
+        123
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.010796370322154665,
+      "solidity": 0.36109839816933637
+    },
+    {
+      "color": "yellow",
+      "center_x": 200.0826883511316,
+      "center_y": 1444.6766924659548,
+      "area_px": 10207,
+      "bbox": [
+        73,
+        1334,
+        251,
+        191
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.01722064263071839,
+      "solidity": 0.35007030901670266
+    },
+    {
+      "color": "yellow",
+      "center_x": 244.07659910502764,
+      "center_y": 1599.895762042643,
+      "area_px": 7598,
+      "bbox": [
+        159,
+        1530,
+        167,
+        152
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.03901599929165527,
+      "solidity": 0.5048001860279706
+    },
+    {
+      "color": "yellow",
+      "center_x": 558.506051527861,
+      "center_y": 1671.1766327142002,
+      "area_px": 8345,
+      "bbox": [
+        460,
+        1606,
+        194,
+        134
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.026260344658637993,
+      "solidity": 0.434104091346529
+    },
+    {
+      "color": "yellow",
+      "center_x": 1155.182785888078,
+      "center_y": 1724.2831508515815,
+      "area_px": 6576,
+      "bbox": [
+        1072,
+        1662,
+        179,
+        112
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.031997229477518326,
+      "solidity": 0.4637844699908315
+    },
+    {
+      "color": "yellow",
+      "center_x": 91.33407896208477,
+      "center_y": 1824.949110837714,
+      "area_px": 8941,
+      "bbox": [
+        0,
+        1762,
+        210,
+        115
+      ],
+      "possibly_truncated": true,
+      "circularity": 0.06800444524091581,
+      "solidity": 0.5639408369863446
+    },
+    {
+      "color": "yellow",
+      "center_x": 2869.2638643221308,
+      "center_y": 1961.2007075226304,
+      "area_px": 9611,
+      "bbox": [
+        2764,
+        1881,
+        242,
+        171
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.012283413349850678,
+      "solidity": 0.38323663695994575
+    },
+    {
+      "color": "yellow",
+      "center_x": 3077.8707291494175,
+      "center_y": 2077.834299276922,
+      "area_px": 18117,
+      "bbox": [
+        2906,
+        1952,
+        345,
+        258
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.012000340262028538,
+      "solidity": 0.366381184464645
+    },
+    {
+      "color": "yellow",
+      "center_x": 195.37571572920174,
+      "center_y": 2133.904148422589,
+      "area_px": 35628,
+      "bbox": [
+        0,
+        1977,
+        493,
+        308
+      ],
+      "possibly_truncated": true,
+      "circularity": 0.006978452859866583,
+      "solidity": 0.38123772785395943
+    },
+    {
+      "color": "yellow",
+      "center_x": 2651.790206433029,
+      "center_y": 2091.2032325172027,
+      "area_px": 6249,
+      "bbox": [
+        2575,
+        2013,
+        161,
+        150
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.014628998272460917,
+      "solidity": 0.3756876183605375
+    },
+    {
+      "color": "yellow",
+      "center_x": 3402.5198336968374,
+      "center_y": 2225.793552344602,
+      "area_px": 14672,
+      "bbox": [
+        3296,
+        2118,
+        243,
+        235
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.01758694551584973,
+      "solidity": 0.4281857845354657
+    },
+    {
+      "color": "yellow",
+      "center_x": 631.5132909022838,
+      "center_y": 2218.637776113815,
+      "area_px": 16026,
+      "bbox": [
+        392,
+        2125,
+        437,
+        179
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.008218100578914738,
+      "solidity": 0.33603824620997674
+    },
+    {
+      "color": "yellow",
+      "center_x": 3498.2083333333335,
+      "center_y": 2394.337837837838,
+      "area_px": 7992,
+      "bbox": [
+        3405,
+        2309,
+        211,
+        139
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.023085567728153,
+      "solidity": 0.4671089160992431
+    },
+    {
+      "color": "yellow",
+      "center_x": 256.4192501494577,
+      "center_y": 2537.172175249808,
+      "area_px": 11709,
+      "bbox": [
+        171,
+        2418,
+        192,
+        260
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.016416156947716896,
+      "solidity": 0.3897738053627603
+    },
+    {
+      "color": "yellow",
+      "center_x": 135.42820872785924,
+      "center_y": 2791.3026972131784,
+      "area_px": 66958,
+      "bbox": [
+        0,
+        2454,
+        470,
+        546
+      ],
+      "possibly_truncated": true,
+      "circularity": 0.011951350536291578,
+      "solidity": 0.38278885099887666
+    },
+    {
+      "color": "yellow",
+      "center_x": 1289.4666566310402,
+      "center_y": 2547.495107632094,
+      "area_px": 6643,
+      "bbox": [
+        1218,
+        2458,
+        137,
+        192
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.02144536690697265,
+      "solidity": 0.413198979909187
+    },
+    {
+      "color": "yellow",
+      "center_x": 572.7151092961807,
+      "center_y": 2615.6762751221077,
+      "area_px": 12489,
+      "bbox": [
+        467,
+        2472,
+        219,
+        287
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.007459562405098093,
+      "solidity": 0.310613691475471
+    },
+    {
+      "color": "yellow",
+      "center_x": 2512.9618078498743,
+      "center_y": 2577.756574600238,
+      "area_px": 7567,
+      "bbox": [
+        2434,
+        2488,
+        145,
+        152
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.03358804885390228,
+      "solidity": 0.540152758940681
+    },
+    {
+      "color": "yellow",
+      "center_x": 1091.5476239669422,
+      "center_y": 2700.4972107438016,
+      "area_px": 19360,
+      "bbox": [
+        941,
+        2529,
+        297,
+        329
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.007659322046199154,
+      "solidity": 0.37571441047187476
+    },
+    {
+      "color": "yellow",
+      "center_x": 3927.125777556606,
+      "center_y": 2619.187982085096,
+      "area_px": 8038,
+      "bbox": [
+        3850,
+        2562,
+        150,
+        145
+      ],
+      "possibly_truncated": true,
+      "circularity": 0.029903713028721014,
+      "solidity": 0.508123143055819
+    },
+    {
+      "color": "yellow",
+      "center_x": 1540.8554059921842,
+      "center_y": 2608.9591836734694,
+      "area_px": 6909,
+      "bbox": [
+        1444,
+        2564,
+        221,
+        100
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.017170122686107087,
+      "solidity": 0.46328706497686584
+    },
+    {
+      "color": "yellow",
+      "center_x": 2591.560187820148,
+      "center_y": 2694.6061468412067,
+      "area_px": 7028,
+      "bbox": [
+        2517,
+        2610,
+        148,
+        190
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.02431567004519889,
+      "solidity": 0.4214819035053525
+    },
+    {
+      "color": "yellow",
+      "center_x": 338.3797373358349,
+      "center_y": 2694.082926829268,
+      "area_px": 10660,
+      "bbox": [
+        221,
+        2620,
+        259,
+        151
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.02543456274925375,
+      "solidity": 0.4188111421050564
+    },
+    {
+      "color": "yellow",
+      "center_x": 2259.224717571798,
+      "center_y": 2725.6376752415954,
+      "area_px": 7347,
+      "bbox": [
+        2176,
+        2653,
+        159,
+        138
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.05056581762177112,
+      "solidity": 0.48378494057221877
+    },
+    {
+      "color": "yellow",
+      "center_x": 2117.566704936854,
+      "center_y": 2864.447837734405,
+      "area_px": 13065,
+      "bbox": [
+        2034,
+        2749,
+        195,
+        230
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.036277297982927184,
+      "solidity": 0.4633389484883412
+    },
+    {
+      "color": "yellow",
+      "center_x": 2755.2128524765017,
+      "center_y": 2865.763682421172,
+      "area_px": 15001,
+      "bbox": [
+        2548,
+        2806,
+        380,
+        142
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.018874675422615783,
+      "solidity": 0.3795559491428933
+    },
+    {
+      "color": "blue",
+      "center_x": 1724.5358802141197,
+      "center_y": 1519.4668720331279,
+      "area_px": 39604,
+      "bbox": [
+        1567,
+        1440,
+        310,
+        160
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.649109935024894,
+      "solidity": 0.9782509355432326
+    }
+  ],
+  "metadata": {
+    "source": "/media/miaoyuan/S7/my_document/研究生/2-项目/无人机比赛/5-HSV-code/data/DJI_20260917145917_0005_V.JPG",
+    "config": {
+      "colors": {
+        "red": {
+          "h_ranges": [
+            [
+              0,
+              10
+            ],
+            [
+              170,
+              179
+            ]
+          ],
+          "s_range": [
+            80,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        },
+        "yellow": {
+          "h_ranges": [
+            [
+              20,
+              35
+            ]
+          ],
+          "s_range": [
+            80,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        },
+        "blue": {
+          "h_ranges": [
+            [
+              95,
+              130
+            ]
+          ],
+          "s_range": [
+            80,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        }
+      },
+      "morphology": {
+        "kernel_shape": "ellipse",
+        "kernel_size": 3,
+        "open_iterations": 1,
+        "close_iterations": 1,
+        "connectivity": 8
+      },
+      "filters": {
+        "min_area_fraction": 0.0005,
+        "max_area_fraction": 0.8,
+        "min_aspect_ratio": 0.15,
+        "max_aspect_ratio": 6.0,
+        "min_circularity": 0.0,
+        "min_solidity": 0.0,
+        "exclude_truncated": false
+      }
+    }
+  }
+}

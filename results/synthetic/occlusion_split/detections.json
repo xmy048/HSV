@@ -1,0 +1,40 @@
+{
+  "center_definition": "去噪后颜色区域质心，不自动等于桶口中心",
+  "image_size": {
+    "width": 640,
+    "height": 480
+  },
+  "elapsed_ms": 2.682121001271298,
+  "detections": [
+    {
+      "color": "blue",
+      "center_x": 289.904535637149,
+      "center_y": 240.0,
+      "area_px": 4630,
+      "bbox": [
+        260,
+        181,
+        52,
+        119
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.6456114068410287,
+      "solidity": 1.0
+    },
+    {
+      "color": "blue",
+      "center_x": 350.095464362851,
+      "center_y": 240.0,
+      "area_px": 4630,
+      "bbox": [
+        329,
+        181,
+        52,
+        119
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.6456114068410287,
+      "solidity": 1.0
+    }
+  ]
+}

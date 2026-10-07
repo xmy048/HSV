@@ -1,0 +1,100 @@
+{
+  "center_definition": "去噪后颜色区域质心，不自动等于桶口中心",
+  "image_size": {
+    "width": 4000,
+    "height": 3000
+  },
+  "elapsed_ms": 80.52648500051873,
+  "detections": [
+    {
+      "color": "yellow",
+      "center_x": 1857.6879747134028,
+      "center_y": 568.5639005519649,
+      "area_px": 21197,
+      "bbox": [
+        1736,
+        517,
+        245,
+        104
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.5673072789667967,
+      "solidity": 0.9769103143146833
+    }
+  ],
+  "metadata": {
+    "source": "/media/miaoyuan/S7/my_document/研究生/2-项目/无人机比赛/5-HSV-code/data/DJI_20260917151202_0081_V.JPG",
+    "config": {
+      "colors": {
+        "red": {
+          "h_ranges": [
+            [
+              0,
+              10
+            ],
+            [
+              170,
+              179
+            ]
+          ],
+          "s_range": [
+            80,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        },
+        "yellow": {
+          "h_ranges": [
+            [
+              20,
+              35
+            ]
+          ],
+          "s_range": [
+            140,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        },
+        "blue": {
+          "h_ranges": [
+            [
+              95,
+              130
+            ]
+          ],
+          "s_range": [
+            80,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        }
+      },
+      "morphology": {
+        "kernel_shape": "ellipse",
+        "kernel_size": 3,
+        "open_iterations": 1,
+        "close_iterations": 1,
+        "connectivity": 8
+      },
+      "filters": {
+        "min_area_fraction": 0.0005,
+        "max_area_fraction": 0.8,
+        "min_aspect_ratio": 0.15,
+        "max_aspect_ratio": 6.0,
+        "min_circularity": 0.0,
+        "min_solidity": 0.0,
+        "exclude_truncated": true
+      }
+    }
+  }
+}

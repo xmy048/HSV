@@ -1,0 +1,100 @@
+{
+  "center_definition": "去噪后颜色区域质心，不自动等于桶口中心",
+  "image_size": {
+    "width": 4000,
+    "height": 3000
+  },
+  "elapsed_ms": 92.83870900071634,
+  "detections": [
+    {
+      "color": "yellow",
+      "center_x": 2025.1455517444083,
+      "center_y": 1647.4911366081933,
+      "area_px": 1515729,
+      "bbox": [
+        1294,
+        935,
+        1397,
+        1478
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.7154108199501618,
+      "solidity": 0.9771294076995576
+    }
+  ],
+  "metadata": {
+    "source": "/media/miaoyuan/S7/my_document/研究生/2-项目/无人机比赛/4-目标识别数据/科目三目标桶数据集/DJI_20260917150933_0063_V.JPG",
+    "config": {
+      "colors": {
+        "red": {
+          "h_ranges": [
+            [
+              0,
+              10
+            ],
+            [
+              170,
+              179
+            ]
+          ],
+          "s_range": [
+            80,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        },
+        "yellow": {
+          "h_ranges": [
+            [
+              20,
+              35
+            ]
+          ],
+          "s_range": [
+            140,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        },
+        "blue": {
+          "h_ranges": [
+            [
+              95,
+              130
+            ]
+          ],
+          "s_range": [
+            80,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        }
+      },
+      "morphology": {
+        "kernel_shape": "ellipse",
+        "kernel_size": 3,
+        "open_iterations": 1,
+        "close_iterations": 1,
+        "connectivity": 8
+      },
+      "filters": {
+        "min_area_fraction": 0.0005,
+        "max_area_fraction": 0.8,
+        "min_aspect_ratio": 0.15,
+        "max_aspect_ratio": 6.0,
+        "min_circularity": 0.1,
+        "min_solidity": 0.0,
+        "exclude_truncated": false
+      }
+    }
+  }
+}

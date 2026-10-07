@@ -1,0 +1,205 @@
+{
+  "center_definition": "去噪后颜色区域质心，不自动等于桶口中心",
+  "image_size": {
+    "width": 4000,
+    "height": 3000
+  },
+  "elapsed_ms": 140.51750900034676,
+  "detections": [
+    {
+      "color": "red",
+      "center_x": 2845.314317785397,
+      "center_y": 2121.1572666026414,
+      "area_px": 1387987,
+      "bbox": [
+        2161,
+        1471,
+        1349,
+        1307
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.5120585990661782,
+      "solidity": 0.9789934118345753
+    },
+    {
+      "color": "yellow",
+      "center_x": 2962.8659740925996,
+      "center_y": 153.0787482365012,
+      "area_px": 7797,
+      "bbox": [
+        2868,
+        74,
+        171,
+        179
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.016875478208518688,
+      "solidity": 0.4158178230494374
+    },
+    {
+      "color": "yellow",
+      "center_x": 3045.2907063197026,
+      "center_y": 721.9246946362188,
+      "area_px": 9415,
+      "bbox": [
+        2967,
+        630,
+        177,
+        217
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.014636594570246422,
+      "solidity": 0.3778393129464644
+    },
+    {
+      "color": "yellow",
+      "center_x": 3637.865019633508,
+      "center_y": 1913.9602421465968,
+      "area_px": 6112,
+      "bbox": [
+        3508,
+        1819,
+        200,
+        180
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.025601412798701022,
+      "solidity": 0.32589511850489217
+    },
+    {
+      "color": "yellow",
+      "center_x": 3855.2311285820088,
+      "center_y": 2129.5168916994244,
+      "area_px": 17553,
+      "bbox": [
+        3755,
+        1948,
+        181,
+        374
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.017528283290250263,
+      "solidity": 0.3141701419340982
+    },
+    {
+      "color": "yellow",
+      "center_x": 3554.357974205725,
+      "center_y": 2245.187637621894,
+      "area_px": 6358,
+      "bbox": [
+        3508,
+        2173,
+        100,
+        172
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.07442846408662782,
+      "solidity": 0.546008845377646
+    },
+    {
+      "color": "yellow",
+      "center_x": 3640.3831039193024,
+      "center_y": 2433.1442681517283,
+      "area_px": 9517,
+      "bbox": [
+        3541,
+        2356,
+        210,
+        190
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.017576522742414002,
+      "solidity": 0.38048975512243877
+    },
+    {
+      "color": "yellow",
+      "center_x": 3924.6490950226244,
+      "center_y": 2660.3449095022625,
+      "area_px": 8840,
+      "bbox": [
+        3854,
+        2562,
+        146,
+        204
+      ],
+      "possibly_truncated": true,
+      "circularity": 0.07802641550413342,
+      "solidity": 0.4471873735329826
+    }
+  ],
+  "metadata": {
+    "source": "/media/miaoyuan/S7/my_document/研究生/2-项目/无人机比赛/5-HSV-code/data/DJI_20260917150533_0041_V.JPG",
+    "config": {
+      "colors": {
+        "red": {
+          "h_ranges": [
+            [
+              0,
+              10
+            ],
+            [
+              170,
+              179
+            ]
+          ],
+          "s_range": [
+            80,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        },
+        "yellow": {
+          "h_ranges": [
+            [
+              20,
+              35
+            ]
+          ],
+          "s_range": [
+            80,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        },
+        "blue": {
+          "h_ranges": [
+            [
+              95,
+              130
+            ]
+          ],
+          "s_range": [
+            80,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        }
+      },
+      "morphology": {
+        "kernel_shape": "ellipse",
+        "kernel_size": 3,
+        "open_iterations": 1,
+        "close_iterations": 1,
+        "connectivity": 8
+      },
+      "filters": {
+        "min_area_fraction": 0.0005,
+        "max_area_fraction": 0.8,
+        "min_aspect_ratio": 0.15,
+        "max_aspect_ratio": 6.0,
+        "min_circularity": 0.0,
+        "min_solidity": 0.0,
+        "exclude_truncated": false
+      }
+    }
+  }
+}

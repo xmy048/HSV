@@ -1,0 +1,47 @@
+colors:
+  red:
+    h_ranges:
+    - - 0
+      - 10
+    - - 170
+      - 179
+    s_range:
+    - 80
+    - 255
+    v_range:
+    - 45
+    - 255
+  yellow:
+    h_ranges:
+    - - 20
+      - 35
+    s_range:
+    - 140
+    - 255
+    v_range:
+    - 45
+    - 255
+  blue:
+    h_ranges:
+    - - 95
+      - 130
+    s_range:
+    - 80
+    - 255
+    v_range:
+    - 45
+    - 255
+morphology:
+  kernel_shape: ellipse
+  kernel_size: 3
+  open_iterations: 1
+  close_iterations: 1
+  connectivity: 8
+filters:
+  min_area_fraction: 0.0005
+  max_area_fraction: 0.8
+  min_aspect_ratio: 0.15
+  max_aspect_ratio: 6.0
+  min_circularity: 0.1
+  min_solidity: 0.0
+  exclude_truncated: false

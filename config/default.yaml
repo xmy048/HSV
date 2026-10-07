@@ -1,0 +1,28 @@
+# OpenCV 八位 HSV；这些数值是调试起点，不保证所有光照下有效。
+colors:
+  red:
+    h_ranges: [[0, 10], [170, 179]]
+    s_range: [80, 255]
+    v_range: [45, 255]
+  yellow:
+    h_ranges: [[20, 35]]
+    s_range: [80, 255]
+    v_range: [45, 255]
+  blue:
+    h_ranges: [[95, 130]]
+    s_range: [80, 255]
+    v_range: [45, 255]
+morphology:  # 对颜色掩膜进行形态学去噪。
+  kernel_shape: ellipse       # ellipse / rect / cross
+  kernel_size: 3              # 正奇数，避免过大的核改变桶沿 结构核尺寸
+  open_iterations: 1          # 0 表示禁用 
+  close_iterations: 1         # 0 表示禁用
+  connectivity: 8             # 4 / 8
+filters:  # 从去噪后的候选区域中筛选目标。
+  min_area_fraction: 0.0005   # 实际颜色像素面积 / 原图面积  最小区域面积比例。 所以小于约 6000 像素的颜色区域会被排除。
+  max_area_fraction: 0.8      # 最大区域面积比例。 
+  min_aspect_ratio: 0.15      # 轴对齐 bbox 的宽 / 高，允许斜拍
+  max_aspect_ratio: 6.0       # 最大宽高比。
+  min_circularity: 0.0        # 0 表示禁用；基于外轮廓
+  min_solidity: 0.0           # 0 表示禁用；颜色像素面积 / 凸包面积   最小实心程度。
+  exclude_truncated: false    # 如果候选区域的外接矩形碰到输入图像边界，就认为它可能只拍到了目标的一部分。

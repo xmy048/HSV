@@ -1,0 +1,130 @@
+{
+  "center_definition": "去噪后颜色区域质心，不自动等于桶口中心",
+  "image_size": {
+    "width": 4000,
+    "height": 3000
+  },
+  "elapsed_ms": 132.8320859993255,
+  "detections": [
+    {
+      "color": "red",
+      "center_x": 2014.5980489783876,
+      "center_y": 506.7749870915394,
+      "area_px": 54228,
+      "bbox": [
+        1841,
+        417,
+        353,
+        190
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.5475637701205706,
+      "solidity": 0.9639419444864149
+    },
+    {
+      "color": "yellow",
+      "center_x": 3687.5705534658787,
+      "center_y": 2124.7041375604513,
+      "area_px": 9305,
+      "bbox": [
+        3598,
+        2037,
+        195,
+        176
+      ],
+      "possibly_truncated": false,
+      "circularity": 0.03552987312856685,
+      "solidity": 0.4355763604447045
+    },
+    {
+      "color": "yellow",
+      "center_x": 3899.6630098452883,
+      "center_y": 2248.784388185654,
+      "area_px": 7110,
+      "bbox": [
+        3815,
+        2176,
+        185,
+        148
+      ],
+      "possibly_truncated": true,
+      "circularity": 0.025200187745301195,
+      "solidity": 0.3659289758106022
+    }
+  ],
+  "metadata": {
+    "source": "/media/miaoyuan/S7/my_document/研究生/2-项目/无人机比赛/5-HSV-code/data/DJI_20260917150723_0045_V.JPG",
+    "config": {
+      "colors": {
+        "red": {
+          "h_ranges": [
+            [
+              0,
+              10
+            ],
+            [
+              170,
+              179
+            ]
+          ],
+          "s_range": [
+            80,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        },
+        "yellow": {
+          "h_ranges": [
+            [
+              20,
+              35
+            ]
+          ],
+          "s_range": [
+            80,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        },
+        "blue": {
+          "h_ranges": [
+            [
+              95,
+              130
+            ]
+          ],
+          "s_range": [
+            80,
+            255
+          ],
+          "v_range": [
+            45,
+            255
+          ]
+        }
+      },
+      "morphology": {
+        "kernel_shape": "ellipse",
+        "kernel_size": 3,
+        "open_iterations": 1,
+        "close_iterations": 1,
+        "connectivity": 8
+      },
+      "filters": {
+        "min_area_fraction": 0.0005,
+        "max_area_fraction": 0.8,
+        "min_aspect_ratio": 0.15,
+        "max_aspect_ratio": 6.0,
+        "min_circularity": 0.0,
+        "min_solidity": 0.0,
+        "exclude_truncated": false
+      }
+    }
+  }
+}
